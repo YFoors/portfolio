@@ -125,3 +125,8 @@
     padding: 0 15px;
  }
  .widget{background-color: yellow}
+ .photo1{
+   position: relative;
+   width: 1000px;
+   height: 150px;
+ }
