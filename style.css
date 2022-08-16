@@ -1,132 +1,82 @@
-*, *:after, *:before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    transition: .5s ease-in-out;
-    /* добавим плавность переходов для всех элементов страницы*/
- }
- ul {
-    list-style: none;
- }
- a {
-    text-decoration: none;
-    outline: none;
- }
- img {
-    display: block;
-    width: 100%;
- }
- h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display';
-    font-weight: normal;
-    letter-spacing: 1px;
- }
- body {
-    font-family: 'Open Sans', arial, sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    color: #373737;
- }
- /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
- header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
-    content: "";
-    display: table;
-    clear: both;
- }
- /* стилевой класс, который управляет шириной контейнера сетки*/
- .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-    padding: 0 15px;
- }
- header {
-    width: 100%;
-    height:150px;
-    background: yellow;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
-    padding: 15px 0;
-    margin-bottom: 30px;
-    position: relative;
- }
- article{background:#FFFAFA;}
- /* логотип */
- 
- /* правый контейнер */
- aside {
-    width: 33%;
-    float: right;
-    background-color:gray;
-    
- }
- 
- /* блок для виджетов */
- .widget {
-    padding: 20px 15px;
-    background: white;
-    font-size: 13px;
-    margin-bottom: 30px;
-    box-shadow: 6px 6px 3px rgba(176, 196, 222);
- }
- 
- 
- footer {
-    padding: 30px 0;
-    background: #3C3D41;
-    color: white;
- }
- 
- @media (max-width: 768px) {
-    /* показываем кнопку для переключения верхней навигации */
-    .nav-toggle {
-       display: block;
-    }
-    header {
-       padding: 10px 0;
-    }
-    
-    /* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
-    .posts-list, aside {
-       width: 100%;
-       float: none;
-    }
-    
- }
- 
- 
- table{
-     border: 4px solid black;
-     border-collapse: collapse;
- }
- td,th{
-     border: 2px solid black;
-     height: 25px;
-     width: 100px;
-     padding: 5px;
-     text-align: center;
- }
- .td2
- {
-     border: 2px solid black;
-     height: 25px;
-     width: 25px;
-     padding: 5px;
-     text-align: center;
-     
- }
- h2, h2
- {font-weight: bold;}
- main{
-     margin: 0 auto;
-     width: 100%;
-     background-color: green;
-  
-     max-width: 960px;
-    padding: 0 15px;
- }
- .widget{background-color: yellow}
- .photo1{
-   position: relative;
-   width: 1000px;
-   height: 150px;
- }
+header{
+   background-image: url("portfolio.PNG");
+   background-repeat: no-repeat;
+   height: 300px;
+   background-position: center;
+   background-color: rgba(139, 111, 144, 0.204);
+   max-width: 40%;
+   margin-left: 600px;
+}
+.menu .active{
+	background:rgb(42, 1, 69);
+}
+.menu{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:100%;
+	font-size:0;
+}
+.menu ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:150px;
+}
+.menu a{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding: 5px 10px;
+} 
+
+	
+.menu>li:hover>a{
+	background-image: url("menu.jpg");
+	border-radius:30px;
+   color: rgba(255, 0, 0, 0.758)
+}
+.menu li li a{
+	color:black;
+} 
+.menu li li:hover a{
+	font-weight:bold;
+	color:rgb(42, 1, 69);
+} 
+.menu >li{
+	position:relative;
+	font-size:20px;
+	display: inline-block;
+} 
+.menu ul{
+	position:absolute;
+	
+	top: 10;
+	z-index: 10;
+	display: none;
+} 
+.menu >li:hover ul{
+	display: block;
+} 
+.Service:hover{
+   background-image: url("menu.jpg");
+	border-radius:30px;
+   color: rgba(255, 0, 0, 0.758);
+   font-weight: bold;
+}
+.Service{
+   margin-left: 25px;
+   font-weight: bold;
+}
+.Hub{
+   margin-left: 15px;
+   font-weight: bold;
+}
+.Help{
+   margin-left: 25px;
+   font-weight: bold;
+}
+.For-me{
+   margin-left: 300px;
+   font-weight: bold;
+}
