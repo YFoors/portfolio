@@ -48,6 +48,11 @@ header{
 	font-size:20px;
 	display: inline-block;
 } 
+.menu >li{
+	position:relative;
+	font-size:20px;
+	display: inline-block;
+} 
 .menu ul{
 	position:absolute;
 	
@@ -56,6 +61,62 @@ header{
 	display: none;
 } 
 .menu >li:hover ul{
+	display: block;
+} 
+.menu1 .active{
+	background:rgb(42, 1, 69);
+}
+.menu1{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:100%;
+	font-size:0;
+}
+.menu1 ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:150px;
+}
+.menu1 a{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding: 5px 10px;
+} 
+
+	
+.menu1>li:hover>a{
+	background-image: url("menu.jpg");
+	border-radius:30px;
+   color: rgba(255, 0, 0, 0.758)
+}
+.menu1 li li a{
+	color:black;
+} 
+.menu1 li li:hover a{
+	font-weight:bold;
+	color:rgb(42, 1, 69);
+} 
+.menu1 >li{
+	position:relative;
+	font-size:20px;
+	display: block;
+} 
+.menu1 >li{
+	position:relative;
+	font-size:20px;
+	display: block;
+} 
+.menu1 ul{
+	position:absolute;
+	
+	top: 10;
+	z-index: 10;
+	display: none;
+} 
+.menu1 >li:hover ul{
 	display: block;
 } 
 .Service:hover{
@@ -94,4 +155,27 @@ header{
 	position:absolute;
 	top: 15px;
 	left: 1750px;
+}
+.left{
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	width: 610px;
+	height: 100%;
+}
+.container2{
+	position: absolute;
+	left: 610px;
+	top: 310px;
+	width: 760px;
+	height: 400px;
+	background: url("KLM.GIF") repeat 0% 0%;
+	font-size: 25px;
+	color:rgb(0, 23, 58);
+}
+.container1{
+	position: absolute;
+	left: 1290px;
+	top: 400px;
+	z-index: 1;
 }
