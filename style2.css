@@ -1,0 +1,107 @@
+header{
+   background-image: url("portfolio.PNG");
+   background-repeat: no-repeat;
+   height: 300px;
+   background-position: center;
+   background-color: rgba(139, 111, 144, 0.204);
+   max-width: 40%;
+   margin-left: 600px;
+}
+.menu .active{
+	background:rgb(42, 1, 69);
+}
+.menu{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:100%;
+	font-size:0;
+}
+.menu ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	width:150px;
+}
+.menu a{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding: 5px 10px;
+} 
+
+	
+.menu>li:hover>a{
+	background-image: url("menu.jpg");
+	border-radius:30px;
+   color: rgba(255, 0, 0, 0.758)
+}
+.menu li li a{
+	color:black;
+} 
+.menu li li:hover a{
+	font-weight:bold;
+	color:rgb(42, 1, 69);
+} 
+.menu >li{
+	position:relative;
+	font-size:20px;
+	display: inline-block;
+} 
+.menu ul{
+	position:absolute;
+	
+	top: 10;
+	z-index: 10;
+	display: none;
+} 
+.menu >li:hover ul{
+	display: block;
+} 
+.Service:hover{
+   background-image: url("menu.jpg");
+	border-radius:30px;
+   color: rgba(255, 0, 0, 0.758);
+   font-weight: bold;
+}
+.Python:hover{
+	background-image: url("menu.jpg");
+	 border-radius:30px;
+	color: rgba(255, 0, 0, 0.758);
+	font-weight: bold;
+ }
+.Service{
+   margin-left: 25px;
+   font-weight: bold;
+}
+.Python{
+	margin-left: 10px;
+	font-weight: bold;
+ }
+.Hub{
+   margin-left: 15px;
+   font-weight: bold;
+}
+.Help{
+   margin-left: 25px;
+   font-weight: bold;
+}
+.For-me{
+   margin-left: 300px;
+   font-weight: bold;
+}
+.widget{
+	position:absolute;
+	top: 15px;
+	left: 1750px;
+}
+.logo{
+	position: absolute;
+	left: 700px;
+	top: 400px;	
+}
+.logo1{
+	position: absolute;
+	left: 850px;
+	font-size: 30px;
+}
